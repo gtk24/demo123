@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+First name: <input type="text" id="name" name="name" value= "Gowtham Thirunavukkarasu"><br><br>
+Age: <input type="text" id="age" name="age" value= 29 ><br><br>
+DOB: <input type="date" id="dob" name="dob" Value="1991-04-02"><br><br>
+  <button onclick="myFunction()">Try it</button> <br> <br>
+  
+<p id="Name"></p>
+<p id="Fname&Lname"> </p>
+
+<p id= "Age"></p>
+<p id="DOB"></p>
+<p id="Output"></p>
+
+<h2> Date operations</h2>
+
+<p id="do"></p>
+<p id="currentDate"></p>
+<p id="currentYear"></p>
+<p id="currentMonth"></p>
+<p id="currentDay"></p>
+
+  
+  
+  
+</form>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("name").value;
+  document.getElementById("Name").innerHTML = "Your name is : " +" "+ x;
+  var res = x.split(" ");
+  document.getElementById("Fname&Lname").innerHTML = "Your first name is: " + res[0]  +" " + '<br>'+ "Your Last name is: " + res[1];
+  
+  
+var a = document.getElementById('age').value;
+var age = Number(a);
+  document.getElementById("Age").innerHTML = "Your age is : " +" "+ a + "  "+ typeof age
+
+var d = document.getElementById("dob").value;
+  document.getElementById("DOB").innerHTML = "Your DOB is : " +" "+ d + "  "+ typeof dob
+  
+var o = document.getElementById("Output").innerHTML = "Hi " + x + " your age is " + a + " , and you're born on " +" "+ d
+
+
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+var db = document.getElementById("dob").value;
+var birthday = db.split("-");
+document.getElementById("do").innerHTML = 
+"Your birth year is: " + birthday[0] +" " + '<br>'+
+"Your birth month is: " + birthday[1] + " " + '<br>'+ 
+
+"Your birth day is: " + birthday[2]
+  
+  document.getElementById("currentYear").innerHTML = Number (birthday[0]) + age
+  
+  
+var q = document.getElementById("dob").value;
+var m = new Date(q)
+m.setMonth(m.getMonth() + age)
+
+document.getElementById("currentMonth").innerHTML = m
+
+var da= new Date(q);
+da.setDate(da.getDate() + age);
+
+document.getElementById("currentDay").innerHTML = da
+
+
+document.getElementById("currentDate").innerHTML = 
+
+days[da.getDay()-1] + "<br>" +
+months[da.getMonth()-1]
+
+
+				if (isNaN(a)) { 
+
+					alert("Please enter Numeric value"); 
+					return false; 
+				} else { 
+					
+					alert("Your age is: " + a); 
+					return true; 
+				} 
+
+
+
+
+ 
+}
+
+</script>
+
+</body>
+</html>

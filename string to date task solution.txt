@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+
+<p id="Name"></p>
+<p id="Fname"> Your First name is:</p>
+<p id="Lname"> Your Last name is:</p>
+
+<p id= "Age"></p>
+<p id="DOB"></p>
+<p id="Output"></p>
+
+<h2> Date operations</h2>
+
+<p id="do"></p>
+<p id="currentYear"></p>
+<p id="currentMonth"></p>
+<p id="currentDay"></p>
+
+
+
+
+<script>
+var Name = {Fname:"Gowtham", Lname: "Thirunavukkarasu"}; 
+var Age = 29;
+var DOB = new Date();
+DOB.setFullYear(1991,3,2);
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var d = new Date(1991,3,2);
+d.setDate(d.getDate() + Age);
+var m = new Date(1991,3,2);
+m.setMonth(m.getMonth() + Age);
+
+
+document.getElementById("Name").innerHTML = Name.Fname + " " + Name.Lname + "<br>" + typeof"Name";
+document.getElementById("Fname").innerHTML = "Your First name is : " + Name.Fname;
+document.getElementById("Lname").innerHTML = "Your First Last is : " + Name.Lname;
+document.getElementById("Age").innerHTML = "Your Age is: " + Age +"<br>"+ typeof Age
+document.getElementById("DOB").innerHTML = "Your DOB is: " + DOB + "<br>"+ typeof DOB
+document.getElementById("currentYear").innerHTML = DOB.getFullYear() + Age
+document.getElementById("currentMonth").innerHTML = m
+document.getElementById("currentDay").innerHTML = d
+document.getElementById("Output").innerHTML = "Hi " + Name.Fname + " "+ Name.Lname +  " your age is " + Age + " and you're born on "+ months[DOB.getMonth()] + " " + DOB.getDate() + " " + DOB.getFullYear()
+document.getElementById("do").innerHTML = DOB.getFullYear() + "<br>"+ months[DOB.getMonth()] + "<br>"+ DOB.getDate() + "<br>"+ days[DOB.getDay()]
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+List = [1,5,4,10,6,2,7,9,2,1,6,3,5,2,3,9];
+  let stop = List.length - 1;
+function bubblesort(list) {
+  align = false;
+    //let stop = List.length - 1;
+  //console.log(stop)
+for ( let i = 0; i < stop ; i++){
+if (list[i] > list[i+1]){
+  align = true;
+let temp = list[i]
+list[i] = list[i+1]
+list[i+1]= temp
+}
+}
+stop --;
+console.log(stop)
+}
+
+do{
+  bubblesort(List);
+}while(align);
+
+console.log(List);

@@ -1,0 +1,12 @@
+Find a given input is a valid number or not
+Find a given input is a valid date or not
+Remove spaces following a string
+Remove spaces followed by a string
+Remove spaces from right and left side of a string
+Sort an array which consists of random numbers
+Sort an array which consists of random strings
+Merge two arrays
+Find an element in an array
+Split an array based on found element
+Sort an array using binary algorithm
+Sort an array which consists of random dates

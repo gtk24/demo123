@@ -1,0 +1,11 @@
+Bubble
+select
+insert
+Merge
+quick
+R-quick
+count
+Radix
+heap
+merge
+tree

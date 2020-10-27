@@ -1,0 +1,28 @@
+list1 =[1,2,3,4,5,6,7,8,9,100,99,123,0,-1,33]
+
+list1.sort()
+print(list1)
+len1 =len(list1)
+findv = int(input("enter the value"))
+
+def binarySearch(list1,findv,len1):
+
+  low = 0
+  high = len1 -1
+  found = False
+
+  while low<=high and not found:
+    mid =(high+low)//2
+    if findv == list1[mid]:
+      found = True
+      print(findv,"element is found @",mid ,"position")
+    elif findv < list1[mid]:
+      high = mid-1
+    else:
+      low = mid+1
+  if( not found):
+    print("element not found")
+
+
+binarySearch(list1,findv,len1)
+

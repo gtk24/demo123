@@ -1,0 +1,78 @@
+Name Gowtham Thirunavukkarsu
+Age
+DOB
+
+change Age to integer and save
+DOB Object
+Print GTK your age is 29 and you're born on
+
+ADD Year and Age
+ADD Month and Age
+ADD day and Age
+Your last name thirunavukkarasu
+your first name is gowtham
+DOB separate and print year is 1991-; month - April and date 2 and what day it is of the week
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+
+<p id="Name"></p>
+<p id="Fname"> Your First name is:</p>
+<p id="Lname"> Your Last name is:</p>
+
+<p id= "Age"></p>
+<p id="DOB"></p>
+<p id="dob"></p>
+<p id="Output"></p>
+
+<h2> Date operations</h2>
+
+<p id="do"></p>
+<p id="currentYear"></p>
+<p id="currentMonth"></p>
+<p id="currentDay"></p>
+
+
+
+
+<script>
+var Name = {Fname:"Gowtham", Lname: "Thirunavukkarasu"}; 
+var Age = 29;
+var DOB = new date(1991,04,02);
+var dob = new Number(date);
+
+
+document.getElementById("Name").innerHTML = Name.Fname + " " + Name.Lname + "<br>" + typeof"Name";
+document.getElementById("Fname").innerHTML = "Your First name is : " + Name.Fname;
+document.getElementById("Lname").innerHTML = "Your First Last is : " + Name.Lname;
+document.getElementById("Age").innerHTML = Age + "<br>" + typeof Age;
+document.getElementById("DOB").innerHTML = DOB.Date+ "/"+ DOB.Month+"/"+ DOB.Year;
+document.getElementById("dob").innerHTML = typeof dob;
+document.getElementById("Output").innerHTML = Name.Fname + " " + Name.Lname  + "\xa0 your age is \xa0" +  Age;
+document.getElementById("do").innerHTML = DOB + Age;
+document.getElementById("currentYear").innerHTML = DOB.Year + Age;
+document.getElementById("currentMonth").innerHTML = DOB.Month + Age
+document.getElementById("currentDay").innerHTML = DOB.Date + Age;
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+

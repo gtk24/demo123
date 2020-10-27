@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- <style>
+        p{
+            color: blue;
+        }
+    </style> -->
+</head>
+<body>
+    <p> TEXT CONTENT</p>
+    <p> TEXT CONTENT</p>
+    <p> TEXT CONTENT</p>
+    <button id="greenbutton" onclick="green()"> green </button>
+    <button id="redbutton " onclick="red()"> red </button>
+    <button id="bluebutton" onclick="blue()"> blue </button>
+</body>
+
+<script>
+
+function green()
+{
+    // for(init;condition;incrementor decrement)
+    //for(i=o;i<=document.getElementsByTagName("p").length;i++)
+    for(i of document.getElementsByTagName("p")){                                    //ecmsscript syntax6
+        
+                i.style.color ="green";
+                i.style.fontSize ="30px";
+          }
+        
+        
+
+}
+
+
+
+
+
+
+
+
+
+// // var a=document.getElementById("greebutton"),
+// // b= document.getElementById("edbutton"),
+// // c=document.getElementById("bluebutton");
+
+// // a.addEventListener("click", function(){
+// //     for(i of document.getElementsByTagName("p")){
+        
+// //         i.style.color ="green";
+// //         i.style.fontSize ="30px";
+//     }
+
+
+// })
+
+
+
+    // function colorchange () {
+    //     var a = document.getElementsByTagName("p")[1];
+    //         a.style.color="green";
+    //     alert("green");
+
+    // }
+
+</script>
+</html>
