@@ -29,3 +29,5 @@ document.getElementById("demo").innerHTML = text;
 </body>
 </html>
 ==============================================
+
+something typed in do while
